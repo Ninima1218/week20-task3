@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <link rel="stylesheet" href="./assets/styles/normalize.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <div class="container mx-auto p-4">
+        <div class="flex flex-wrap -mx-2">
+            <!-- Sidebar -->
+            <aside class="w-full md:w-1/4 p-2">
+                <div class="p-4 rounded-lg shadow">
+                    <h1 class="text-2xl font-bold mb-4">Profile</h1>
+                    <img class="profileImg" id="profileImg" src="./assets/styles/images/profile-photo.jpg" alt="profile-photo" class="rounded-full mb-4 w-32 h-32 mx-auto">
+                    <p class="text-center mb-4">Nino Markarova<br>Front-end Developer</p>
+                    <h2 class="text-xl font-semibold mb-2">Current Projects</h2>
+                    <div id="project" class="mb-4"></div>
+                    <h2 class="text-xl font-semibold mb-2">Notifications</h2>
+                    <div id="notifications" class="mb-4"></div>
+                </div>
+            </aside>
+            <!-- Main content -->
+            <main class="w-full md:w-3/4 p-2">
+                <div class="bg-white p-4 rounded-lg shadow mb-4">
+                    <h1 class="text-2xl font-bold mb-4">Dashboard</h1>
+                    <input type="datetime-local" class="form-control mb-4"/>
+                    <div>
+                        <h2 class="text-xl font-semibold mb-2">Daily Tasks</h2>
+                        <ul id="tasks" class="list-group mb-4"></ul>
+                    </div>
+                </div>
+                <!-- Charts Section -->
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <h2 class="text-xl font-semibold mb-4">Task Statistics</h2>
+                    <canvas id="taskChart" class="mb-4"></canvas>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

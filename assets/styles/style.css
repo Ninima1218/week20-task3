@@ -1,0 +1,15 @@
+.profileImg {
+    width: auto;
+    height: auto;
+    border-radius: 30%;
+}
+
+aside {
+    background-color: rgb(252, 236, 217);
+    color:rgb(80, 79, 79);
+}
+
+main {
+    background-color:gainsboro;
+}
+

@@ -1,0 +1,14 @@
+{
+  "tasks": [
+    { "title": "Task 1", "description": "Finish 20 week homework" },
+    { "title": "Task 2", "description": "Go to yoga" }
+  ],
+  "projects": [
+    { "name": "Project 1", "deadline": "2024-05-20" },
+    { "name": "Project 2", "deadline": "2024-06-15" }
+  ],
+  "notifications": [
+    { "message": "Tomorrow at 14:00 - conference" },
+    { "message": "Start 21 week" }
+  ]
+}
